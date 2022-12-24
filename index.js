@@ -36,6 +36,11 @@ app.use("/assets", express.static(path.join(__dirname, "public/assets")))
 // app.use("/", (req, res) => {
 //     res.send('Welcome to the server home page')
 // })
+/* Get rid of "cannot get /" error */
+// app.get('/', (req, res) => {
+//     res.send('This Magic Thing is working!!!');
+// })
+app.use("/", express.static(path.join(__dirname, "public")))
 
 
 /* File Storage */
