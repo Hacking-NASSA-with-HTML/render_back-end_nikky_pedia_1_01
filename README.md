@@ -1,10 +1,18 @@
-# Render Nikky-pedia_1_01 Back-end part.
+# Render Nikky-pedia 1_01 back-end part.
 React app about Nicole Kidman.
 <br>
-## currently BACK-END deployed on Render.
+
+Currently BACK-END deployed on Render:
+
+### https://render-back-end-nikky-pedia.onrender.com/
 
 
-FRONT-END deployed on 
+FRONT-END https://github.com/Hacking-NASSA-with-HTML/render_nikky_pedia_1_01
+
+deployed on: 
+
+### https://nikky-pedia-r.netlify.app/
+
 
 ![](https://github.com/Hacking-NASSA-with-HTML/nikky_pedia/blob/main/Nikky-pedia.gif)
 
