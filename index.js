@@ -90,8 +90,8 @@ const wakeUpLazyAzz = async () => {
     try {
         const response = await fetch('https://render-back-end-nikky-pedia.onrender.com/')
         // const body = await response.text()
-        console.log(response.ok)
-        console.log(response.status)
+        // console.log(response.ok)
+        // console.log(response.status)
         // console.log(body)
     } catch (error) {
         console.log(error)
@@ -99,10 +99,10 @@ const wakeUpLazyAzz = async () => {
 }
 
 (function loop() {
-    let wait = Math.floor(Math.random() * 3000) + 5000
+    let wait = Math.floor(Math.random() * 300000) + 5000
     setTimeout(function () {
         wakeUpLazyAzz()
-        console.log(wait)
+        // console.log(wait)
         loop()
     }, wait)
 }())
