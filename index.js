@@ -1,4 +1,5 @@
 import express from "express";
+import fetch from 'node-fetch';
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -83,3 +84,25 @@ mongoose.connect(process.env.MONGO_URL, {
     // User.insertMany(users)
     // Post.insertMany(posts)
 }).catch((error) => console.log(`${error} did not connect`))
+
+
+const wakeUpLazyAzz = async () => {
+    try {
+        const response = await fetch('https://render-back-end-nikky-pedia.onrender.com/')
+        // const body = await response.text()
+        console.log(response.ok)
+        console.log(response.status)
+        // console.log(body)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+(function loop() {
+    let wait = Math.floor(Math.random() * 3000) + 5000
+    setTimeout(function () {
+        wakeUpLazyAzz()
+        console.log(wait)
+        loop()
+    }, wait)
+}())
